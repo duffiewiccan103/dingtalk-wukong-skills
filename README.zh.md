@@ -20,8 +20,6 @@ npx --yes skills add stvlynn/dingtalk-wukong-skills --skill='*' --full-depth
 npx --yes skills add stvlynn/dingtalk-wukong-skills --skill='*' --full-depth -g
 ```
 
-> [!TIP]
-> 必须使用 `--full-depth` 参数，以便多技能仓库能够发现所有子目录。
 
 ## 技能列表
 
@@ -63,21 +61,3 @@ npx --yes skills add stvlynn/dingtalk-wukong-skills --skill='*' --full-depth -g
 | :--- | :--- | :--- |
 | [skill-creator](./skill-creator) | 用于设计、校验和打包新 Agent 技能的工具 | Wukong v0.9.2 |
 
-## 常见问题 (FAQ)
-
-### 为什么选择技能 (Skills)?
-
-技能的价值在于其可共享性和按需加载。
-
-可共享性使得提示词在不同项目中更易于管理和复用。按需加载意味着可以根据需要引入技能，其扩展能力远超任何 Agent 单次能够容纳的上下文窗口。
-
-### Skills vs AGENTS.md
-
-虽然 `AGENTS.md` 预先加载所有内容以确保 Agent 遵循，但 Skills 提供了一个标准化的、按需加载的知识库，具有更好的扩展性。如果您希望某些技能始终生效，可以在 `AGENTS.md` 中直接引用它们。
-
-## 许可
-
-本仓库中的技能和资源提取自 Wukong。如有特定许可信息，请参阅每个技能目录。
-
----
-由 Wukong Project 制作。

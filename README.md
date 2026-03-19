@@ -2,7 +2,7 @@
 
 A curated collection of Agent Skills for DingTalk ecosystem and professional document processing.
 
-[English] | [简体中文](./README.zh.md)
+[English](./README.md) | [简体中文](./README.zh.md)
 
 > [!IMPORTANT]
 > This project is a collection of skills extracted from Wukong v0.9.2 (arm64).
