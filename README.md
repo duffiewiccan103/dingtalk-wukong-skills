@@ -2,6 +2,8 @@
 
 A curated collection of Agent Skills for DingTalk ecosystem and professional document processing.
 
+[English] | [简体中文](./README.zh.md)
+
 > [!IMPORTANT]
 > This project is a collection of skills extracted from Wukong v0.9.2 (arm64).
 > These skills are optimized for Agent environments like [cli-gemini](https://github.com/google-gemini/cli), [claude-code](https://github.com/anthropics/claude-code), and [codex](https://github.com/vercel-labs/codex).
@@ -62,22 +64,3 @@ Real-time query skills for travel and local life.
 | Skill | Description | Source |
 | :--- | :--- | :--- |
 | [skill-creator](./skill-creator) | Tools for designing, validating, and packaging new agent skills | Wukong v0.9.2 |
-
-## FAQ
-
-### Why Skills?
-
-The value of skills lies in being shareable and on-demand.
-
-Being shareable makes prompts easier to manage and reuse across projects. Being on-demand means skills can be pulled in as needed, scaling far beyond what any agent's context window could fit at once.
-
-### Skills vs AGENTS.md
-
-While `AGENTS.md` loads everything upfront for guaranteed respect by agents, skills offer a standardized, on-demand knowledge base that scales better. If you want certain skills to always apply, you can reference them directly in your `AGENTS.md`.
-
-## License
-
-Skills and resources in this repository are extracted from Wukong. Please refer to each skill directory for specific license information if available.
-
----
-Produced by Wukong Project.
