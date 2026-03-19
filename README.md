@@ -1,53 +1,83 @@
 # DingTalk Wukong Skills
 
-> 集成 10+ 款深度优化的 AI 技能，助力 AI Agent 掌控钉钉生态与专业文档处理。
+A curated collection of Agent Skills for DingTalk ecosystem and professional document processing.
 
-[![Skills Count](https://img.shields.io/badge/Skills-10-blue.svg)](#技能清单)
-[![Source](https://img.shields.io/badge/Source-Wukong%20v0.9.2-orange.svg)](https://github.com/stvlynn/dingtalk-wukong-skills)
-[![CLI](https://img.shields.io/badge/Tools-Skills%20CLI-green.svg)](https://github.com/vercel/skills)
+> [!IMPORTANT]
+> This project is a collection of skills extracted from Wukong v0.9.2 (arm64).
+> These skills are optimized for Agent environments like [cli-gemini](https://github.com/google-gemini/cli), [claude-code](https://github.com/anthropics/claude-code), and [codex](https://github.com/vercel-labs/codex).
 
-本项目是从 Wukong v0.9.2 提取并整理的技能仓库。所有技能均已适配 [Skills CLI](https://github.com/vercel/skills)，可直接安装至你的 AI Agent 环境中（如 cli-gemini, claude-code, codex 等）。
+## Installation
 
+To install all skills from this repository:
+
+```bash
+npx --yes skills add stvlynn/dingtalk-wukong-skills --skill='*' --full-depth
+```
+
+Or to install them globally:
+
+```bash
+npx --yes skills add stvlynn/dingtalk-wukong-skills --skill='*' --full-depth -g
+```
+
+> [!TIP]
+> Use `--full-depth` is required for this multi-skill repository to discover all subdirectories.
+
+## Skills
+
+This collection provides a comprehensive set of skills for office automation and travel assistance.
+
+### DingTalk Workspace
+
+Opinionated skills for interacting with DingTalk products.
+
+| Skill | Description | Source |
+| :--- | :--- | :--- |
+| [dws](./dws) | Comprehensive DingTalk workspace operations (OA, Todo, Calendar, Doc, etc.) | Wukong v0.9.2 |
+
+### Document Processing
+
+Professional tools for handling Office and PDF documents with high fidelity.
+
+| Skill | Description | Source |
+| :--- | :--- | :--- |
+| [docx](./docx) | Advanced Word document processing with redlining and formatting support | Wukong v0.9.2 |
+| [xlsx](./xlsx) | Excel spreadsheet manipulation with formula and analysis support | Wukong v0.9.2 |
+| [pptx](./pptx) | PowerPoint presentation handling including HTML-to-PPT conversion | Wukong v0.9.2 |
+| [pdf](./pdf) | PDF document handler for text/table extraction and form filling | Wukong v0.9.2 |
+| [pdf-convert-to-word](./pdf-convert-to-word) | Specialized PDF to Word/Markdown conversion | Wukong v0.9.2 |
+
+### Travel & Information
+
+Real-time query skills for travel and local life.
+
+| Skill | Description | Source |
+| :--- | :--- | :--- |
+| [12306-train-query](./12306-train-query) | Real-time 12306 train schedule and availability query | Wukong v0.9.2 |
+| [ctrip-flight-search](./ctrip-flight-search) | Global flight search and price comparison via Ctrip | Wukong v0.9.2 |
+| [dianping-info-query](./dianping-info-query) | Local business information and reviews from Dianping | Wukong v0.9.2 |
+
+### Developer Tools
+
+| Skill | Description | Source |
+| :--- | :--- | :--- |
+| [skill-creator](./skill-creator) | Tools for designing, validating, and packaging new agent skills | Wukong v0.9.2 |
+
+## FAQ
+
+### Why Skills?
+
+The value of skills lies in being shareable and on-demand.
+
+Being shareable makes prompts easier to manage and reuse across projects. Being on-demand means skills can be pulled in as needed, scaling far beyond what any agent's context window could fit at once.
+
+### Skills vs AGENTS.md
+
+While `AGENTS.md` loads everything upfront for guaranteed respect by agents, skills offer a standardized, on-demand knowledge base that scales better. If you want certain skills to always apply, you can reference them directly in your `AGENTS.md`.
+
+## License
+
+Skills and resources in this repository are extracted from Wukong. Please refer to each skill directory for specific license information if available.
 
 ---
-
-## 技能清单
-
-我们将技能分为四大核心类别，满足不同场景需求：
-
-### 钉钉生态 (DingTalk Workspace)
-| Skill ID | 功能描述 | 典型用途 |
-| :--- | :--- | :--- |
-| **`dws`** | 钉钉工作台全能入口 | 操作审批、待办、日历、文档、群聊、AI 表格、钉盘等 |
-
-### 文档处理 (Office & PDF)
-| Skill ID | 功能描述 | 特点 |
-| :--- | :--- | :--- |
-| **`docx`** | Word 文档专家 | 深度处理 .docx，支持修订、批注与格式保留 |
-| **`xlsx`** | Excel 数据大师 | 支持公式计算、数据分析、多格式互转 (.xlsx/.csv) |
-| **`pptx`** | PPT 演示助手 | 支持 HTML 转 PPT、内容提取与批量编辑 |
-| **`pdf`** | PDF 全能工具 | 文本/表格提取、表单填写、拆分合并 |
-| **`pdf-convert-to-word`** | PDF 格式转换 | 精准将 PDF 转换为可编辑的 Word 或 Markdown |
-
-### 生活与出行 (Travel & Info)
-| Skill ID | 功能描述 | 典型用途 |
-| :--- | :--- | :--- |
-| **`12306-train-query`** | 火车票实时查询 | 查询班次、余票、票价及正晚点信息 |
-| **`ctrip-flight-search`** | 携程航班搜索 | 搜索全球单程/往返机票，对比价格与时刻 |
-| **`dianping-info-query`** | 大众点评查询 | 获取门店评分、地址、人均消费及精华点评 |
-
-### 开发工具 (Developer Tools)
-| Skill ID | 功能描述 | 典型用途 |
-| :--- | :--- | :--- |
-| **`skill-creator`** | 技能开发套件 | 自动化设计、校验与打包自定义 AI 技能 |
-
----
-
-## 高级安装选项
-
-| 场景 | 命令示例 |
-| :--- | :--- |
-| **按需安装** | `npx skills add stvlynn/dingtalk-wukong-skills --skill dws --skill pdf --full-depth` |
-| **全局安装** | `npx skills add stvlynn/dingtalk-wukong-skills --all --full-depth -g` |
-| **指定 Agent** | `npx skills add stvlynn/dingtalk-wukong-skills --all --full-depth --agent claude-code -y` |
-| **本地开发测试** | `npx skills add ./ --list --full-depth` |
+Produced by Wukong Project.
